@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Verde: hsl(75, 94%, 57%);
+--Branco: hsl(0, 0%, 100%);
+--Cinza-700: hsl(0, 0%, 20%);
+--Cinza-800: hsl(0, 0%, 12%);
+--Cinza-900: hsl(0, 0%, 8%);
+}
+
+body{
+    color: var(--Branco);
+    background-color: var(--Cinza-900);
+    font-family: 'Inter';
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--Branco);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: var(--Cinza-800);
+    padding: 50px 40px;
+    border-radius: 18px;
+    max-width: 400px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.sub-p{
+    text-align: center;
+    color: var(--Verde);
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--Cinza-600);
+    font-weight: 400;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+li{
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    padding: 15px;
+    background-color: var(--Cinza-700);
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: var(--Verde);
+    transition: 0.3s;
+}
+
+li:hover a{
+color: var(--Cinza-900);
+}
